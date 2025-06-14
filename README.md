@@ -1,13 +1,15 @@
 # Python Project - TO DO LIST(Simple version)
 ```
 calendar_app/
-├── app.py
-├── events.json
+├── app.py (主要routers)
+├── events.json (行事曆記錄檔)
+├── special_days.json (特別倒數的紀錄檔)
 ├── templates/
-│   └── index.html
+│   └── index.html (架構)
 └── static/
-    ├── style.css
-    └── script.js
+    ├── moods.json (沒用^^但不能刪掉因為我懶得改扣)
+    ├── style.css (樣式)
+    └── script.js (互動)
 ```  
 
 ## Execute Tips
@@ -19,7 +21,8 @@ calendar_app/
 
 * execute
 ```
-(if you are in local VSCode)
+# local vscode
+# create venv
 .\venv\bin\Activate.ps1
 <!-- 
     Ctrl+Alt+P 
@@ -30,14 +33,17 @@ python app.py
 ```
 
 ```
-(Or you can push to your own git)
-> git init
-> git add .
-> git commit -m "first commit"
-> git branch -M main
-> git remote add origin //git remote 連結
->git push -u origin main
-
+# use gitHub
 pip install flask
 python app.py
 ```
+## Work
+1. 行事曆
+    * 新增
+    * 完成
+    * 刪除
+2. 抽籤
+    * 抽到爽
+3. 特別倒數日
+    * 不能刪除
+    * 不能選過去的日子(計數會出錯)
