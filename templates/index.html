@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <title>我的行事曆</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+  </head>
+  <body>
+    <h1>📅 我的行事曆</h1>
+
+    <div id="calendar"></div>
+
+    <h2 id="selected-date">請點選日期</h2>
+    <ul id="todo-list"></ul>
+
+    <form id="event-form">
+      <input type="text" id="title" placeholder="新增事項" required />
+      <button type="submit">新增事件</button>
+    </form>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>

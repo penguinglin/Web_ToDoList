@@ -1,0 +1,67 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: #fffbe7;
+  color: #333;
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #ff8800;
+}
+
+#calendar {
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #ffaa00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+.done {
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.delete-btn {
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  color: #cc0000;
+  cursor: pointer;
+  font-size: 14px;
+}
