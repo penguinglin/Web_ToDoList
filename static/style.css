@@ -1,67 +1,84 @@
 body {
-  font-family: "Noto Sans TC", sans-serif;
-  background-color: #fffbe7;
-  color: #333;
-  padding: 20px;
-  max-width: 700px;
-  margin: auto;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
 }
 
-h1,
-h2 {
-  text-align: center;
-  color: #ff8800;
-}
-
-#calendar {
-  margin-bottom: 20px;
-  background: #fff;
-  padding: 10px;
-  border-radius: 8px;
-}
-
-form {
+.container {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 15px;
+  height: 100vh;
 }
 
-input[type="text"] {
-  padding: 8px;
-  flex: 1;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.sidebar {
+  width: 260px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  padding: 1rem;
+  overflow-y: auto;
 }
 
-button {
-  padding: 8px 12px;
-  background-color: #ffaa00;
+.sidebar h2, .sidebar h3 {
+  margin-top: 1rem;
+}
+
+.sidebar button {
+  margin-top: 0.5rem;
+  padding: 6px 10px;
+  background-color: #7c5fe9;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
+.sidebar button:hover {
+  background-color: #644ed4;
 }
 
-ul li {
-  padding: 5px 0;
-  border-bottom: 1px solid #eee;
-}
-.done {
-  color: #aaa;
-  text-decoration: line-through;
+.main {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
 }
 
-.delete-btn {
-  margin-left: 10px;
-  background-color: transparent;
+#calendar {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#event-form {
+  margin-top: 1rem;
+}
+
+#event-form input[type="text"] {
+  padding: 5px;
+  width: 200px;
+  margin-right: 5px;
+}
+
+#todo-list li {
+  margin-top: 0.5rem;
+  list-style: none;
+}
+
+#todo-list button {
+  margin-left: 0.5rem;
+  padding: 2px 5px;
+  background-color: #e74c3c;
+  color: white;
   border: none;
-  color: #cc0000;
+  border-radius: 3px;
   cursor: pointer;
-  font-size: 14px;
+}
+
+#todo-list input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* 讓選取的那一天變亮色 */
+.fc-daygrid-day.selected {
+  background-color: #dff9fb !important;
+  /* border: 2px solid #00a8ff !important; */
+  border-radius: 4px;
 }
