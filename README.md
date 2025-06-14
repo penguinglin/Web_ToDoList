@@ -1,4 +1,5 @@
 # Python Project - TO DO LIST(Simple version)
+```
 calendar_app/
 ├── app.py
 ├── events.json
@@ -7,7 +8,8 @@ calendar_app/
 └── static/
     ├── style.css
     └── script.js
-  
+```  
+
 ## Execute Tips
 
 * package
