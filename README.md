@@ -14,6 +14,7 @@ calendar_app/
 
 * package
 > pip install flask
+
 > python.exe -m pip install --upgrade pip (Optional)
 
 * execute
